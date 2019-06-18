@@ -1,6 +1,6 @@
 // Number Guessing Game
-var guessingGame = (x, i) => {
-var	x = Math.floor(Math.random()*100)+1; // Computer chooses random number between 1 to 100
+var guessingGame = (range, times) => {
+var	x = Math.floor(Math.random()*range)+1; // Computer chooses random number between 1 to 100
 
 var y=x%2 // Check if the the number is even or odd and stores it
 
@@ -9,7 +9,7 @@ if (y==0){ // Check if modulus is 0 and return even or odd
 }else{
 	alert("Number is odd");
 }
-for (var i = 1; i <= 10; i++) 
+for (var i = 1; i <= times; i++) 
 {
 	let num = prompt ("Please enter a number:");
 	// The computer prints a screen which prompts the user to enter a number
@@ -29,4 +29,4 @@ for (var i = 1; i <= 10; i++)
 }
 
 };
-guessingGame(10, 1);
+guessingGame(10, 4);
