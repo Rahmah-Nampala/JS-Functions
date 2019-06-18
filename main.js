@@ -23,10 +23,10 @@ for (var i = 1; i <= times; i++)
 	if (num>x){
 		alert("Number is greater, make another guess");
 	}
-	if (i==10){
+	if (i==times){
 		alert("YOU LOOSE");
 	}
 }
 
 };
-guessingGame(10, 4);
+guessingGame(100, 10);
